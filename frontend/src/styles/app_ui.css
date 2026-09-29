@@ -2375,4 +2375,192 @@
   }
 }
 
+/* ==========================================================================
+   20. LANDING PAGE (2D SAAS VIEW)
+   ========================================================================== */
+.landing-2d-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #F8FAFC;
+  color: var(--text-primary);
+  font-family: var(--font-family-base);
+}
+
+.landing-2d-nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-card);
+}
+
+.landing-2d-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-family-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0F172A;
+  letter-spacing: -0.02em;
+}
+
+.landing-2d-logo-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.125rem;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.landing-2d-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.landing-2d-hero {
+  flex: 1;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 24px 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.landing-2d-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #EEF2FF;
+  border: 1px solid #C7D2FE;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #4F46E5;
+  margin-bottom: 24px;
+}
+
+.landing-2d-title {
+  font-family: var(--font-family-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  max-width: 780px;
+  margin: 0 0 16px 0;
+}
+
+.landing-2d-description {
+  font-size: 1.125rem;
+  color: #64748B;
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 0 32px 0;
+}
+
+.landing-2d-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.landing-2d-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.landing-2d-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.landing-2d-card:hover {
+  transform: translateY(-4px);
+  border-color: #CBD5E1;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.landing-2d-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.landing-2d-card h3 {
+  font-family: var(--font-family-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0;
+}
+
+.landing-2d-card p {
+  font-size: 0.8125rem;
+  color: #64748B;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.landing-2d-footer {
+  border-top: 1px solid var(--border-card);
+  padding: 24px;
+  text-align: center;
+  color: #94A3B8;
+  font-size: 0.8125rem;
+  background: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .landing-2d-nav {
+    padding: 14px 16px;
+  }
+  .landing-2d-title {
+    font-size: 2rem;
+  }
+  .landing-2d-description {
+    font-size: 0.9375rem;
+  }
+  .landing-2d-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
